@@ -73,7 +73,7 @@ public class Student_bim7th {
         {
         DBConnection connection=new DBConnection();
         connection.open();
-        String sql="DELETE FROM student_bim7th WHERE id=?";
+        String sql="DELETE FROM student_bim7th WHERE student_id=?";
         PreparedStatement statement= connection.initStatement(sql);
         statement.setString(1,id.toString());
 
@@ -93,6 +93,7 @@ public class Student_bim7th {
         ResultSet rs=connection.executeQuery();
        while(rs.next()){
             Student s=new Student();
+            s.setId(Integer.parseInt(rs.getString("student_id")));
             s.setName(rs.getString("name"));
             s.setSubject(rs.getString("subject"));
             s.setClass(rs.getString("class"));
@@ -118,6 +119,7 @@ public class Student_bim7th {
         ResultSet rs=connection.executeQuery();
        while(rs.next()){
             Student s=new Student();
+            s.setId(Integer.parseInt(rs.getString("student_id")));
             s.setName(rs.getString("name"));
             s.setSubject(rs.getString("subject"));
             s.setClass(rs.getString("class"));
@@ -143,6 +145,7 @@ public class Student_bim7th {
         ResultSet rs=connection.executeQuery();
        while(rs.next()){
             Student s=new Student();
+            s.setId(Integer.parseInt(rs.getString("student_id")));
             s.setName(rs.getString("name"));
             s.setSubject(rs.getString("subject"));
             s.setClass(rs.getString("class"));
@@ -169,6 +172,7 @@ public class Student_bim7th {
         ResultSet rs=connection.executeQuery();
        while(rs.next()){
             Student s=new Student();
+            s.setId(Integer.parseInt(rs.getString("student_id")));
             s.setName(rs.getString("name"));
             s.setSubject(rs.getString("subject"));
             s.setClass(rs.getString("class"));
@@ -195,6 +199,7 @@ public class Student_bim7th {
         ResultSet rs=connection.executeQuery();
        while(rs.next()){
             Student s=new Student();
+            s.setId(Integer.parseInt(rs.getString("student_id")));
             s.setName(rs.getString("name"));
             s.setSubject(rs.getString("subject"));
             s.setClass(rs.getString("class"));
@@ -221,6 +226,7 @@ public class Student_bim7th {
         ResultSet rs=connection.executeQuery();
        while(rs.next()){
             Student s=new Student();
+            s.setId(Integer.parseInt(rs.getString("student_id")));
             s.setName(rs.getString("name"));
             s.setSubject(rs.getString("subject"));
             s.setClass(rs.getString("class"));

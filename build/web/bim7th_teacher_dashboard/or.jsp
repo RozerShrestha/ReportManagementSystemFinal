@@ -1,4 +1,4 @@
-<%-- 
+<%--
     Document   : highspeed
     Created on : Feb 4, 2015, 12:13:31 AM
     Author     : Rozer
@@ -28,7 +28,6 @@
             for (Student u : Student_bim7th.getOR()) {
     %>
     <tr>
-
         <td><%=u.getName()%></td>
         <td><%=u.getRoll()%></td>
         <td><%=u.getAssignment()%></td>

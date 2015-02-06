@@ -38,11 +38,11 @@
         <td><%=u.getPreboard()%></td>
         <td><%=u.getTotal()%></td>
         <td>
-                    <a href="edituser.jsp?id=<%=u.getId()%>" class="btn btn-success">Edit</a>
-                    <a href="deleteuser.jsp?id=<%=u.getId()%>" class="btn btn-danger" onclick="return confirm('Are you sure to Delete?')">Delete</a>
-                    
-                </td>
-        
+            <a href="editRecords.jsp?id=<%=u.getId()%>" class="btn btn-success">Edit</a>
+            <a href="deleteRecords.jsp?id=<%=u.getId()%>" class="btn btn-danger" onclick="return confirm('Are you sure to Delete?')">Delete</a>
+
+        </td>
+
     </tr> 
 
 </tr> 
