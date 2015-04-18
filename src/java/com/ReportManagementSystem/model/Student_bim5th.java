@@ -17,31 +17,31 @@ import java.util.ArrayList;
  *
  * @author Rozer
  */
-public class Student_bim7th {
+public class Student_bim5th {
     
-        public static int insert(Student students) throws ClassNotFoundException, SQLException
-        {
-            DBConnection connection=new DBConnection();//DBConnection class ko object banako
-            connection.open();
-            String sql="INSERT INTO student_bim7th(name,roll,subject,class,assignment,report,midterm,presentation,preboard,total) VALUES(?,?,?,?,?,?,?,?,?,?)";
-            PreparedStatement statement= connection.initStatement(sql);
-
-            statement.setString(1,students.getName());
-             statement.setInt(2,students.getRoll());
-            statement.setString(3,students.getSubject());
-            statement.setString(4,students.getclass());
-            statement.setInt(5,students.getAssignment());
-            statement.setInt(6,students.getReport());
-            statement.setInt(7,students.getMidterm());
-            statement.setInt(8,students.getPresentation());
-            statement.setInt(9,students.getPreboard());
-            statement.setInt(10,students.getTotal());
-
-            int result=connection.executeUpdate();
-            connection.close();
-            return result;
-
-        }
+    public static int insert(Student students) throws ClassNotFoundException, SQLException
+    {
+        DBConnection connection=new DBConnection();//DBConnection class ko object banako
+        connection.open();
+        String sql="INSERT INTO student_bim7th(name,roll,subject,class,assignment,report,midterm,presentation,preboard,total) VALUES(?,?,?,?,?,?,?,?,?,?)";
+        PreparedStatement statement= connection.initStatement(sql);
+       
+        statement.setString(1,students.getName());
+         statement.setInt(2,students.getRoll());
+        statement.setString(3,students.getSubject());
+        statement.setString(4,students.getclass());
+        statement.setInt(5,students.getAssignment());
+        statement.setInt(6,students.getReport());
+        statement.setInt(7,students.getMidterm());
+        statement.setInt(8,students.getPresentation());
+        statement.setInt(9,students.getPreboard());
+        statement.setInt(10,students.getTotal());
+                      
+        int result=connection.executeUpdate();
+        connection.close();
+        return result;
+        
+    }
     
     public static int Update(Student students) throws ClassNotFoundException, SQLException
     {

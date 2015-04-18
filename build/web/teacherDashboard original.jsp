@@ -107,8 +107,6 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#">Welcome ${sessionScope.sessionData}</a></li>
                         <li><a href="index.jsp">Logout</a></li>
-                       <% String name="${sessionScope.sessionData}";%>
-                        
 
                     </ul>
                     <form class="navbar-form navbar-right">

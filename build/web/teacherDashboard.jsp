@@ -86,23 +86,13 @@
                 xmlhttp.open("GET","addRecords.jsp", true);
                 xmlhttp.send();
             }
-//            function loadBim7thHRM() {
-//                var xmlhttp = new XMLHttpRequest();
-//                xmlhttp.onreadystatechange = function() {
-//                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-//                        document.getElementById("table").innerHTML = xmlhttp.responseText;
-//                    }
-//                }
-//                xmlhttp.open("GET","bim7th/HRM.jsp", true);
-//                xmlhttp.send();
-//            }
         </script>
 
     </head>
 
     <body>
-
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<%@include file="head.jsp" %>
+<!--        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -117,6 +107,8 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#">Welcome ${sessionScope.sessionData}</a></li>
                         <li><a href="index.jsp">Logout</a></li>
+                       <% String name="${sessionScope.sessionData}";%>
+                        
 
                     </ul>
                     <form class="navbar-form navbar-right">
@@ -124,7 +116,7 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </div>-->
 
 
 

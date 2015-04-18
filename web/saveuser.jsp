@@ -23,5 +23,5 @@
         u.setId(userid);
         Student_bim7th.Update(u);
     }
- response.sendRedirect("teacherDashboard.jsp");
+response.sendRedirect("teacherDashboard.jsp#");
 %>

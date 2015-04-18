@@ -12,17 +12,10 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="icon" href="../../favicon.ico"
-
-
-
-
-              <link href="assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-
         <link href="assets/css/dashboard.css" rel="stylesheet" type="text/css"/>
-
         <script src="assets/js/ie-emulation-modes-warning.js" type="text/javascript"></script>
-
         <script src="assets/js/ie10-viewport-bug-workaround.js" type="text/javascript"></script>
         <script>
             function loadBim7thHighSpeed() {
@@ -90,8 +83,8 @@
     </head>
 
     <body>
-
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <%@include file="head.jsp" %>
+<!--        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -107,6 +100,7 @@
 
                         <li><a>Welcome ${sessionScope.sessionData}</a></li>
                         <li><a href="index.jsp">Logout</a></li>
+                        <li><a href="aboutme.jsp">About me</a></li>
 
 
                     </ul>
@@ -115,7 +109,7 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </div>-->
 
 
 
@@ -520,6 +514,7 @@
             </div>
             <div class="pull-right">
                 <a href="javascript:window.print()"><img src="assets/img/print.jpg" width="40px" height="40px" alt="print this page" id="print-button" /></a>
+                
             </div>
         </div>
         <script src="assets/js/jquery.min.js" type="text/javascript"></script>
